@@ -47,29 +47,36 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-  				 <a class="navbar-brand" href="#"></a> <img src="../../../img/logo-color.png" alt="Wendy Codes Logo" width="400" height="400">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a class="nav-link" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center px-4" style="background-color: #FFFFFF;">
 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
+<div class="container">
+<a class="navbar-brand" href="">Wendy Codes</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">My Skills</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Contact</a>
+</ul>
+<form class="d-flex">
+<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+</div>
+</div>
 </nav>
+		
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			
